@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/bg_card"
+    android:id="@+id/card"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.joooonho.SelectableRoundedImageView
+            android:scaleType="centerCrop"
+            app:sriv_left_top_corner_radius="5dp"
+            app:sriv_right_top_corner_radius="0dip"
+            app:sriv_left_bottom_corner_radius="5dp"
+            app:sriv_right_bottom_corner_radius="0dp"
+            app:sriv_border_width="0dp"
+            app:sriv_oval="false"
+        android:src="@drawable/juejin"
+        android:id="@+id/iv_display"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:layout_marginLeft="@dimen/text_left_image"
+        android:layout_marginTop="10dp"
+        android:textColor="?attr/card_textcolor"
+        android:textSize="@dimen/text_size_title"
+        android:id="@+id/tv_title"
+        android:text="@string/text_title_test"
+        android:layout_toRightOf="@+id/iv_display"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:maxLines="2"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_marginLeft="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_display"
+        android:layout_below="@id/tv_title">
+            <ImageView
+                android:src="@drawable/collection"
+                android:id="@+id/iv_collection"
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+            <TextView
+                android:layout_marginLeft="1dp"
+                android:gravity="center"
+                android:textColor="?attr/card_small_textcolor"
+                android:textSize="12sp"
+                android:id="@+id/tv_collection"
+                android:text="560"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <ImageView
+            android:src="@drawable/author"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/iv_author"
+            android:layout_width="12dp"
+            android:layout_height="12dp" />
+        <TextView
+            android:layout_marginLeft="1dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="?attr/card_small_textcolor"
+            android:id="@+id/tv_author"
+            android:text="严晓东"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+
+            android:id="@+id/iv_time"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/time"
+            android:layout_width="12dp"
+            android:layout_height="12dp" />
+        <TextView
+            android:layout_marginLeft="1dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="?attr/card_small_textcolor"
+            android:id="@+id/tv_time"
+            android:text="2天前"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

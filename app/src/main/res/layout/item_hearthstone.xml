@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/card"
+
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/bg_card"
+
+    >
+    <RelativeLayout
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.joooonho.SelectableRoundedImageView
+
+        android:src="@drawable/hearthstone"
+        android:id="@+id/iv_image"
+        android:scaleType="centerCrop"
+        app:sriv_left_top_corner_radius="5dp"
+        app:sriv_right_top_corner_radius="0dip"
+        app:sriv_left_bottom_corner_radius="5dp"
+        app:sriv_right_bottom_corner_radius="0dp"
+        app:sriv_border_width="0dp"
+        app:sriv_oval="false"
+        android:layout_width="140dp"
+        android:layout_height="80dp"
+       />
+
+
+        <TextView
+
+            android:id="@+id/tv_title"
+            android:layout_alignTop="@id/iv_image"
+            android:layout_toRightOf="@+id/iv_image"
+            android:text="@string/hearthstone_title"
+            android:layout_marginLeft="@dimen/text_left_image"
+            android:textSize="15sp"
+            android:textColor="?attr/card_textcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <RelativeLayout
+
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/iv_image"
+            android:layout_below="@id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="?attr/item_comment_icon"
+            android:id="@+id/iv_comment"
+            android:layout_width="18dp"
+            android:layout_height="18dp" />
+        <TextView
+            android:layout_marginLeft="5dp"
+
+            android:textColor="?attr/card_small_textcolor"
+            android:textSize="12sp"
+           android:layout_toRightOf="@id/iv_comment"
+            android:text="99"
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:layout_alignParentRight="true"
+                android:layout_toLeftOf="@+id/tv_type"
+                android:layout_marginRight="60dp"
+                android:textColor="?attr/card_small_textcolor"
+                android:id="@+id/tv_time"
+                android:text="2016-08-09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:id="@+id/tv_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="原创"
+                android:textColor="@color/md_white_1000"
+                android:background="@drawable/bg_text"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

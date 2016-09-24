@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include layout="@layout/view_toolbar"/>
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/netscrollview"
+        android:background="?attr/card_backgroundcolor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="15dp"
+                android:text="常规"
+                android:theme="@style/setting_tittle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TableLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:shrinkColumns="0"
+                android:stretchColumns="0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TableRow
+                    android:layout_marginBottom="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:paddingLeft="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/download"
+                            android:text="自动离线下载"
+                            android:textSize="16sp"
+                            android:textColor="?attr/card_textcolor"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/small_text1"
+                            android:textColor="?attr/card_small_textcolor"
+                            android:text="仅 Wi-Fi下可用，自动下载最新内容"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                        <CheckBox
+                            android:layout_marginEnd="40dp"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_height="30dp"
+                            android:layout_width="30dp"
+                          />
+
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/md_grey_300"/>
+                <TableRow
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:paddingLeft="12dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/network"
+                            android:text="无图模式"
+                            android:textSize="16sp"
+                            android:textColor="?attr/card_textcolor"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"/>
+                        <TextView
+                            android:id="@+id/small_text2"
+                            android:textColor="?attr/card_small_textcolor"
+                            android:text="2G/3G 网络下不下载图片"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                    <CheckBox
+                        android:layout_marginEnd="40dp"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_height="30dp"
+                        android:layout_width="30dp"
+                        />
+
+                </TableRow>
+
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="其他"
+                    android:theme="@style/setting_tittle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TableRow
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/push_message"
+                            android:textColor="?attr/card_textcolor"
+                            android:text="推送消息"
+                            android:layout_marginLeft="12dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:textSize="16sp"
+
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"/>
+
+
+
+
+                    <CheckBox
+                        android:layout_marginEnd="40dp"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_height="30dp"
+                        android:layout_width="30dp"
+                        />
+
+
+
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/md_grey_300"/>
+                <TableRow
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+
+                        android:id="@+id/day_night_mode"
+                        android:text="夜间模式"
+                        android:layout_marginLeft="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"
+                        android:textColor="?attr/card_textcolor"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+
+                    <Switch
+
+                        android:layout_marginEnd="40dp"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/switch_DayNight_mode" />
+
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/md_grey_300"/>
+                <TableRow
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:id="@+id/clear_cache"
+                            android:text="清除缓存"
+                            android:layout_marginLeft="12dp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:textSize="16sp"
+                            android:textColor="?attr/card_textcolor"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"/>
+                </TableRow>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/md_grey_300"/>
+                <TableRow
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/check_update"
+                        android:text="检查更新"
+                        android:layout_marginLeft="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"
+                        android:textColor="?attr/card_textcolor"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+                </TableRow>
+
+
+
+
+
+        </TableLayout>
+
+
+        </LinearLayout>
+        
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

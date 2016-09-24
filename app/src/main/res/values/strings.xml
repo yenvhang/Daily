@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">日常</string>
+    <string name="hearth_stone">炉石传说</string>
+    <string name="hearthstone_title">黄金超级联赛秋季赛64强首日综述</string>
+    <string name="text_title_test">一分钟了解handler机制啊啊啊啊</string>
+    <string name="night_mode">夜间模式</string>
+    <string name="day_mode">日间模式</string>
+</resources>

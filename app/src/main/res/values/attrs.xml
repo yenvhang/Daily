@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="card_backgroundcolor" format="color"/>
+    <attr name="card_textcolor" format="color"/>
+    <attr name="card_small_textcolor" format="color"/>
+    <attr name="item_backgroundcolor" format="color"/>
+    <attr name="item_comment_icon" format="reference"/>
+
+</resources>
